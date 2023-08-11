@@ -1,0 +1,11 @@
+{
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#530659",
+        "titleBar.activeBackground": "#75087C",
+        "titleBar.activeForeground": "#FEFBFF"
+    },
+    "python.linting.pylintArgs": [
+        "--load-plugins=pylint_django",
+        "--django-settings-module=levelup.settings",
+    ],
+}
