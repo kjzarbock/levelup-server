@@ -1,0 +1,38 @@
+[
+    {
+        "model": "levelupapi.event",
+        "pk": 1,
+        "fields": {
+            "title": "Rainy Day Game Tournament",
+            "organizer": 1,
+            "game": 1,
+            "date_time": "2023-08-25T15:00:00Z",
+            "location": "123 Main Street, Cityville"
+
+        }
+    },
+    {
+        "model": "levelupapi.event",
+        "pk": 2,
+        "fields": {
+            "title": "Sunny Day Game Tournament",
+            "organizer": 1,
+            "game": 2,
+            "date_time": "2023-08-25T15:00:00Z",
+            "location": "504 Red Hill Court, Brentwood"
+
+        }
+    },
+    {
+        "model": "levelupapi.event",
+        "pk": 3,
+        "fields": {
+            "title": "Monopoly Tournament",
+            "organizer": 1,
+            "game": 2,
+            "date_time": "2023-08-25T15:00:00Z",
+            "location": "Logan's House"
+
+        }
+    }
+]
