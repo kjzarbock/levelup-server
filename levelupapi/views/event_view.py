@@ -1,9 +1,10 @@
-from django.conf import settings
+"""View module for handling requests about game types"""
 from django.http import HttpResponseServerError
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers, status
 from levelupapi.models import Event
+
 
 class EventView(ViewSet):
     """Level up game types view"""
@@ -26,6 +27,7 @@ class EventView(ViewSet):
         events = Event.objects.all()
         serializer = EventSerializer(events, many=True)
         return Response(serializer.data)
+
 
 class EventSerializer(serializers.ModelSerializer):
     """JSON serializer for customers"""
