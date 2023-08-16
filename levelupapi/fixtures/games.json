@@ -1,20 +1,26 @@
 [
-    {
-      "model": "levelupapi.game",
-      "pk": 1,
-      "fields": {
-        "title": "Monopoly",
-        "creator": 1,
-        "game_type": 1
-      }
-    },
-    {
-      "model": "levelupapi.game",
-      "pk": 2,
-      "fields": {
-        "title": "Sorry",
-        "creator": 1,
-        "game_type": 1
-      }
+  {
+    "model": "levelupapi.game",
+    "pk": 1,
+    "fields": {
+      "title": "Monopoly",
+      "creator": 1,
+      "game_type": 1,
+      "maker": "Charles B. Darrow",
+      "number_of_players": 5,
+      "skill_level": "Medium"
     }
-  ]
+  },
+  {
+    "model": "levelupapi.game",
+    "pk": 2,
+    "fields": {
+      "title": "Sorry",
+      "creator": 1,
+      "game_type": 1,
+      "maker": "Hasbro",
+      "number_of_players": 4,
+      "skill_level": "Easy"
+    }
+  }
+]
