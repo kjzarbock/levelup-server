@@ -19,13 +19,22 @@ class EventView(ViewSet):
         return Response(serializer.data)
 
     def list(self, request):
-        """Handle GET requests to get all game types
-
-        Returns:
-            Response -- JSON serialized list of game types
-        """
         events = Event.objects.all()
         serializer = EventSerializer(events, many=True)
+        return Response(serializer.data)
+    
+    def create(self, request):
+        organizer = Gamer.objects.get(user=request.auth.user)
+        game = Game.objects.get(pk=request.data["game"])
+
+        event = Event.objects.create(
+            title=request.data["title"],
+            organizer=organizer,
+            game=game,
+            date_time=request.data["date_time"],
+            location=request.data["location"]
+        )
+        serializer = EventSerializer(event)
         return Response(serializer.data)
     
 class OrganizerSerializer(serializers.ModelSerializer):
