@@ -6,3 +6,4 @@ class Event(models.Model):
     game = models.ForeignKey("Game", on_delete=models.CASCADE, related_name="event")
     date_time = models.DateTimeField()
     location = models.CharField(max_length=255)
+    attendees = models.ManyToManyField("Gamer", through='EventGamer')

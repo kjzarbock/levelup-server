@@ -7,8 +7,8 @@
             "organizer": 1,
             "game": 1,
             "date_time": "2023-08-25T15:00:00Z",
-            "location": "123 Main Street, Cityville"
-
+            "location": "123 Main Street, Cityville",
+            "attendees": []
         }
     },
     {
@@ -19,8 +19,8 @@
             "organizer": 1,
             "game": 2,
             "date_time": "2023-08-25T15:00:00Z",
-            "location": "504 Red Hill Court, Brentwood"
-
+            "location": "504 Red Hill Court, Brentwood",
+            "attendees": []
         }
     },
     {
@@ -31,8 +31,8 @@
             "organizer": 1,
             "game": 2,
             "date_time": "2023-08-25T15:00:00Z",
-            "location": "Logan's House"
-
+            "location": "Logan's House",
+            "attendees": []
         }
     }
 ]

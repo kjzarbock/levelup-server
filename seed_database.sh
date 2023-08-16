@@ -11,3 +11,4 @@ python3 manage.py loaddata game_types
 python3 manage.py loaddata gamers
 python3 manage.py loaddata games
 python3 manage.py loaddata events
+
