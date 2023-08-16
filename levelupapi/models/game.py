@@ -7,7 +7,3 @@ class Game(models.Model):
     maker = models.CharField(max_length=25)
     number_of_players = models.IntegerField()
     skill_level = models.CharField(max_length=10)
-
-    @property
-    def game_title(self):
-        return f'{self.title}'
