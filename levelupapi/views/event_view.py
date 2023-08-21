@@ -49,6 +49,11 @@ class EventView(ViewSet):
         event.save()  # Save the updated event object
 
         return Response(None, status=status.HTTP_204_NO_CONTENT)
+    
+    def destroy(self, request, pk):
+        event = Event.objects.get(pk=pk)
+        event.delete()
+        return Response(None, status=status.HTTP_204_NO_CONTENT)
 
     
 class OrganizerSerializer(serializers.ModelSerializer):
